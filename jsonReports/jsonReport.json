@@ -1,0 +1,112 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\User\\Desktop\\Assignment Darko Kochovski\\Automation Task\\playwright.config.ts",
+    "rootDir": "C:/Users/User/Desktop/Assignment Darko Kochovski/Automation Task",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "always"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/User/Desktop/Assignment Darko Kochovski/Automation Task/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/User/Desktop/Assignment Darko Kochovski/Automation Task",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/Homepage.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.42.1",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\Homepage.ts",
+      "file": "tests/Homepage.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Invalid date range.",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 5431,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-04-02T18:58:02.155Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "15a3090f6fc5356a2fd1-0087e0de1f9a328c9c76",
+          "file": "tests/Homepage.ts",
+          "line": 39,
+          "column": 6
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-04-02T18:58:00.949Z",
+    "duration": 10597.94,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

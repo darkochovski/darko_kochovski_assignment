@@ -1,0 +1,15 @@
+export const macedonianCities = [
+  "Novo Selo",
+  "Struga",
+  "Bitola",
+  "Shtip",
+  "Skopje",
+  "Tetovo",
+  "Gostivar",
+  "Ohrid",
+  "Resen",
+  "Kumanovo",
+  "Strumica",
+  "Bogdanci",
+  "Kichevo",
+];
