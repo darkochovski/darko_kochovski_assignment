@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\User\\Desktop\\Assignment Darko Kochovski\\Automation Task\\playwright.config.ts",
-    "rootDir": "C:/Users/User/Desktop/Assignment Darko Kochovski/Automation Task",
+    "configFile": "C:\\Users\\User\\Desktop\\Assignment Darko Kochovski\\darko_kochovski_assignment\\playwright.config.ts",
+    "rootDir": "C:/Users/User/Desktop/Assignment Darko Kochovski/darko_kochovski_assignment",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -10,9 +10,7 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {
-      "actualWorkers": 1
-    },
+    "metadata": {},
     "preserveOutput": "always",
     "reporter": [
       [
@@ -39,12 +37,12 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/User/Desktop/Assignment Darko Kochovski/Automation Task/test-results",
+        "outputDir": "C:/Users/User/Desktop/Assignment Darko Kochovski/darko_kochovski_assignment/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "",
         "name": "",
-        "testDir": "C:/Users/User/Desktop/Assignment Darko Kochovski/Automation Task",
+        "testDir": "C:/Users/User/Desktop/Assignment Darko Kochovski/darko_kochovski_assignment",
         "testIgnore": [],
         "testMatch": [
           "tests/Homepage.ts"
@@ -58,53 +56,17 @@
     "workers": 2,
     "webServer": null
   },
-  "suites": [
+  "suites": [],
+  "errors": [
     {
-      "title": "tests\\Homepage.ts",
-      "file": "tests/Homepage.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Invalid date range.",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 5431,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-04-02T18:58:02.155Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "15a3090f6fc5356a2fd1-0087e0de1f9a328c9c76",
-          "file": "tests/Homepage.ts",
-          "line": 39,
-          "column": 6
-        }
-      ]
+      "message": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments.",
+      "stack": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."
     }
   ],
-  "errors": [],
   "stats": {
-    "startTime": "2024-04-02T18:58:00.949Z",
-    "duration": 10597.94,
-    "expected": 1,
+    "startTime": "2024-04-02T23:32:02.593Z",
+    "duration": 28.95799999999997,
+    "expected": 0,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
