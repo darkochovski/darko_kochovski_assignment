@@ -48,4 +48,4 @@ This repository contains UI tests for https://pulse.eco/ using Playwright.
 
 ### Running the Tests
 1. Navigate to the `tests` directory containing Playwright test scripts.
-2. Run the Playwright tests using the command-line interface (npx playwright test) or your preferred test runner.
+2. Run the Playwright tests using the command-line (npx playwright test) or your preferred test runner.
