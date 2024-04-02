@@ -8,7 +8,6 @@ export class MapPage {
   }
 
   async navigateToCity(city: string) {
-
     const formattedCity = city.toLowerCase().replace(/\s+/g, "");
     await this.page.goto(`https://${formattedCity}.pulse.eco/`);
   }
