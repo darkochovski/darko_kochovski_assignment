@@ -6,7 +6,6 @@ import { MapPage } from "../page-objects/MapPage";
 test.beforeAll(setupPlaywright);
 test.afterAll(teardownPlaywright);
 
-
 test("Navigation bar links working properly", async () => {
   const homePage = new Homepage(page);
   const mapPage = new MapPage(page);
