@@ -3,7 +3,7 @@ import { Homepage } from "../page-objects/HomePage";
 import { page, setupPlaywright, teardownPlaywright } from "../playwrightSetup";
 import { MapPage } from "../page-objects/MapPage";
 
-test.beforeAll(setupPlaywright);
+test.beforeEach(setupPlaywright);
 test.afterAll(teardownPlaywright);
 
 test("Navigation bar links working properly", async () => {

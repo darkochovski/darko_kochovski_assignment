@@ -17,6 +17,9 @@ export class MapPage {
     const formattedCity = city.toLowerCase().replace(/\s+/g, "");
     expect(url).toBe(`https://${formattedCity}.pulse.eco/`);
     const citySelected = `//span[text()="${city}"]`;
+    await this.page.waitForSelector('.pulse-logo', { state: 'visible' });
+    await this.page.waitForSelector('div#wrapper>nav>ul', { state: 'visible' });
+    await this.page.waitForSelector('div.filter-div.leaflet-control', { state: 'visible' });
     const elementExists = await this.page.waitForSelector(citySelected);
     expect(elementExists).toBeTruthy();
   }
