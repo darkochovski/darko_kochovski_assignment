@@ -8,7 +8,7 @@ test.beforeAll(setupPlaywright);
 test.afterAll(teardownPlaywright);
 test.setTimeout(60000);
 
-test.only("Verify the navigation to the city map", async () => {
+test("Verify the navigation to the city map", async () => {
   const homePage = new Homepage(page);
   const mapPage = new MapPage(page);
   for (const city of macedonianCities) {
