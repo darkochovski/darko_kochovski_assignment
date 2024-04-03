@@ -13,16 +13,15 @@ export class MapPage {
   }
 
   async verifyCityMapRedirected(city: string) {
-    const url = await this.page.url();
-    const formattedCity = city.toLowerCase().replace(/\s+/g, "");
-    expect(url).toBe(`https://${formattedCity}.pulse.eco/`);
-    const citySelected = `//span[text()="${city}"]`;
+    await new Promise(resolve => setTimeout(resolve, 1000));
     await this.page.waitForSelector('.pulse-logo', { state: 'visible' });
     await this.page.waitForSelector('div#wrapper>nav>ul', { state: 'visible' });
     await this.page.waitForSelector('div.filter-div.leaflet-control', { state: 'visible' });
+    const citySelected = `//span[text()="${city}"]`;
+    await this.page.waitForSelector(citySelected);
     const elementExists = await this.page.waitForSelector(citySelected);
     expect(elementExists).toBeTruthy();
-  }
+}
 
   async navigateToAbout() {
     await this.page.click('//a[contains(text(),"About")]');

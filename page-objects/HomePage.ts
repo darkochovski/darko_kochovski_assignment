@@ -7,7 +7,12 @@ export class Homepage {
     this.page = page;
   }
 
-  async navigateToHomePage() {
+  async navigateToHomePageURL() {
+    await this.page.goto('https://pulse.eco/');
+    await this.page.waitForSelector(".dropdown", { state: "visible" });
+}
+
+  async navigateToHomePageFromLogo() {
     await this.page.waitForSelector('div.navbar-current-city', { state: 'visible' });
     await this.page.waitForSelector('.container', { state: 'visible' });
     await (await this.page.waitForSelector("img[alt='pulse.eco logo']")).click();
@@ -17,25 +22,14 @@ export class Homepage {
 
   async selectCountryAndCity(country: string, city: string) {
     const citySelector = `p[data-name='${city}']`;
-
-    // Wait for the dropdown to be visible and clickable
     await this.page.waitForSelector(".dropdown", { state: "visible" });
-
-    // Click the dropdown to open it
     await Promise.all([
-        this.page.click(".dropdown")
+        this.page.click("span.placeholder.selectedCity")
     ]);
-
-    // Hover over the country to reveal cities
     await this.page.hover(`p:has-text("${country}")`);
-
-    // Wait for the city selector to appear and click it
     await this.page.waitForSelector(citySelector, { state: "visible" });
     await this.page.click(citySelector);
-
-    // Click the button to view the city map
     await this.page.click("#gotoCityButton");
-
     return city;
 }
 }
