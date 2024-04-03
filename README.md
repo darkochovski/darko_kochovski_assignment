@@ -21,7 +21,7 @@ Test cases for CreateBooking, UpdateBooking, and DeleteBooking APIs are availabl
 ## Bonus Task
 - Verify that the API has successfully created a new booking with valid input data for all fields.
 - Verify that the API successfully updates a booking with valid input data for all fields.
-- Verify that the API returns a success response confirming the deletion of the booking.
+- Verify that the API returns a successful response confirming the deletion of the booking.
 
 Automating these test cases ensures that core functionalities of creating, updating, and deleting bookings are working as expected.
 
@@ -35,7 +35,7 @@ Automating these test cases ensures that core functionalities of creating, updat
 4. Run the collection in Postman to execute the tests.
 
 ## Smoke Tests and bugs
-Smoke tests and bugs for https://pulse.eco/ are available to ensure basic functionality and stability.
+To ensure basic functionality and stability, smoke tests and bugs for https://pulse.eco/ are available.
 [Download Smoke Tests and bugs] Tasks_1_and_2_+_Bonus_Tasks.zip - file name: Task2 SmokeTests Bugs
 
 ## Playwright UI Tests
@@ -48,4 +48,9 @@ This repository contains UI tests for https://pulse.eco/ using Playwright.
 
 ### Running the Tests
 1. Navigate to the `tests` directory containing Playwright test scripts.
-2. Run the Playwright tests using the command-line (npx playwright test) or your preferred test runner.
+2. Run the Playwright tests using the command line (npx playwright test) or your preferred test runner.
+
+### CI Pipeline
+1. Navigate to Actions from the navigation bar.
+2. A new run is available after a new commit.
+3. You can view the results by clicking on the last commit, clicking on test, expand Run Playwright tests.
